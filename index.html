@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="Una pequeña sorpresa hecha con cariño.">
+  <title>Una parte de mi alma... ✦</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#" class="brand" aria-label="Inicio">
+      <span class="brand-star">✦</span> Para mi bebito
+    </a>
+    <button class="music-button" id="musicButton" type="button"
+      aria-pressed="false">
+      <span id="musicIcon">♫</span>
+      <span id="musicLabel">Activar música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="welcome" id="welcome">
+      <p class="eyebrow">✦ UNA PEQUEÑA SORPRESA ✦</p>
+      <h1>Hay cosas que<br>merecen su propio <em>universo.</em></h1>
+      <p class="intro">
+        Y yo quería construir uno para ti.
+        Tómate tu tiempo y aprecia lo que ha salido de mi corazon.
+      </p>
+
+      <div class="moon" aria-hidden="true">☾</div>
+
+      <button class="primary-button" id="beginButton" type="button">
+        Descubrir mi sorpresa <span>↗</span>
+      </button>
+      <p class="hint">Hecho pensando en ti..</p>
+    </section>
+
+    <section class="letter-section hidden" id="letterSection">
+      <p class="eyebrow">un mensaje desde mi mundo, directo al tuyo.</p>
+
+      <button class="envelope" id="envelope" type="button"
+        aria-label="Abrir la carta" aria-expanded="false">
+        <span class="envelope-glow"></span>
+        <span class="envelope-back"></span>
+        <span class="letter-paper">
+          <span class="paper-title">Para ti,</span>
+          <span class="paper-text">Tengo cosas que decirte...</span>
+        </span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="wax-seal">✦</span>
+      </button>
+
+      <p class="hint" id="envelopeHint">Toca el sobre para abrirlo</p>
+
+      <article class="letter hidden" id="letter">
+        <div class="letter-top">✦ UNA CARTA PARA TI ✦</div>
+
+        <h2>Mi unico amor,</h2>
+
+        <p>
+        Cuando pienso en nuestros primeros momentos juntos, es increíble visualizar hasta donde hemos llegado al día de hoy, 
+        no solos cada uno por su propio camino, si no juntos.
+        </p>
+
+        <p>
+     Soy conciente que hemos pasado por mucho, y hasta ahora hemos podido superarlo todo juntos sin necesidad de pensar o recurrir al final de nuestros días compartidos, 
+     deseo con todo mi corazón que así sea siempre ya que...deseo compartir lo que me resta de vida contigo.
+        </p>
+
+        <p>
+        Puedo prometerte seguir mejorando por ti, te lo mereces no hay necesidad de que alguien más pueda ser mejor por ti o que te de lo que yo puedo hacer,
+         me aseguraré de ser yo quién cumpla y te haga sentir todo lo que jamás has experimentado.
+        </p>
+
+        <p>
+       Cada día a tu lado es un regalo, aprecio cada momento más debido al poco tiempo que tenemos juntos entre semana, nunca de los nunca cambiaria lo nuestro por falta de tiempo eres tu el unico al que mi corazón adora,
+        valoro todo lo que podemos hablar o hacer juntos eso nunca lo dudes.
+        </p>
+
+        <p>
+         Si hay algo más que comentar, es que eres un gran novio, eres un chico maravilloso, siempre te esfuerzas, te preocupas por mí, eres admirable, manejas mejor tus emociones de lo que crees, hasta donde me concierne jamás has ignorado el como me siento, 
+        eres atento, detallista, comprensible, fuerte, capaz, se que te vales por ti solo, y bueno eres un alma hermosa que no había tenido la oportunidad de ser amada.
+        </p>
+
+        <p>
+          Recuerda que siempre vas a ser 
+          <strong>el hombre con el que yo realmente deseo lograrlo todo, no importa que pase voy a estar a tu lado</strong>
+          te amo con todo mi ser mi dulce luna.
+        </p>
+
+        <p class="signature">
+          Con todo mi cariño solo para,<br>
+          <span>mi dulce niño✦</span>
+        </p>
+
+        <button class="text-button" id="secretsButton" type="button">
+          Todavía hay algunas palabras para tii ↓
+        </button>
+      </article>
+    </section>
+
+    <section class="secrets-section hidden" id="secretsSection">
+      <p class="eyebrow">PEQUEÑOS SECRETOS DEL UNIVERSO</p>
+      <h2>Hay estrellas que<br><em>guardan palabras.</em></h2>
+      <p class="section-description">
+        Toca cada estrella. Algunas cosas bonitas merecen descubrirse
+        poco a poco.
+      </p>
+
+      <div class="stars-grid" id="starsGrid">
+        <button class="secret-star" data-secret="0" type="button">
+          <span>✧</span><small>01</small>
+        </button>
+        <button class="secret-star" data-secret="1" type="button">
+          <span>✦</span><small>02</small>
+        </button>
+        <button class="secret-star" data-secret="2" type="button">
+          <span>✧</span><small>03</small>
+        </button>
+        <button class="secret-star" data-secret="3" type="button">
+          <span>✦</span><small>04</small>
+        </button>
+      </div>
+
+      <p class="secrets-progress" id="secretsProgress">
+        0 de 4 secretos descubiertos
+      </p>
+
+      <div class="secret-message hidden" id="secretMessage"
+        role="status" aria-live="polite">
+        <span class="secret-symbol">✦</span>
+        <p id="secretText"></p>
+        <button class="text-button" id="closeSecret" type="button">
+          Guardar en mi corazón ✧
+        </button>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <p class="eyebrow">UN MOMENTO QUE ESPERAMOS</p>
+      <h2>El tiempo también<br><em>guarda sorpresas.</em></h2>
+      <p class="section-description" id="countdownCaption">
+        Cada día que pasa nos acerca a algo especial.
+      </p>
+
+      <div class="countdown" id="countdown" aria-label="Cuenta regresiva">
+        <div class="time-box">
+          <span id="days">000</span><small>DÍAS</small>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span><small>HORAS</small>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span><small>MINUTOS</small>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span><small>SEGUNDOS</small>
+        </div>
+      </div>
+      <p class="hint">Cada segundo vale la pena a tu lado.</p>
+    </section>
+
+    <section class="final-section">
+      <div class="final-star">✦</div>
+      <p class="eyebrow">ANTES DE QUE TE VAYAS</p>
+      <h2>De todas estas miseras almas<br><em>encontre a una que vale mas que todas.</em></h2>
+      <p class="section-description">
+        Desde lo mas profundo de mi corazon.
+      </p>
+      <button class="primary-button" id="finalButton" type="button">
+        Una última sorpresa ♡
+      </button>
+      <p class="final-surprise hidden" id="finalSurprise">
+        Si pudiera volver al dia en el que te conoci, no cambiaria nada...todo fue perfecto. ✨
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Armado con partes de mi alma</span>
+    <span>✦</span>
+    <span>para un alma muy especial.</span>
+  </footer>
+
+  <audio id="backgroundMusic" src="musica.mp3"
+    loop preload="none"></audio>
+</body>
+</html>
